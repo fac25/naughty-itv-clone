@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+
+.App {
+    text-align: center;
+}
+  
+  
+.App-header {
+    background-color: #282c34;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+
+
+.tile {
+    position: relative;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 300px;
+}
+
+.tile__wrapper {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.tile__image-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.tile__image-container img {
+    width: 400px;
+}
+
+.tile__date {
+    margin: 9px 0 0;
+    display: block;
+}
+
+.tile__summary {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.tile__heading-container {
+    margin: 0;
+}
+
+.tile__heading-link {
+    position: static;
+    z-index: 2;
+}
+
+.tile__heading-link::before {
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.tile__heading {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+
+
+
+
+.tile-grid {
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.tile-grid__heading {
+        font-size: 20px;
+        margin-top: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+.tile-grid__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
